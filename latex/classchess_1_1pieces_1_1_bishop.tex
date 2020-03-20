@@ -1,0 +1,49 @@
+\hypertarget{classchess_1_1pieces_1_1_bishop}{}\doxysection{chess.\+pieces.\+Bishop Class Reference}
+\label{classchess_1_1pieces_1_1_bishop}\index{chess.pieces.Bishop@{chess.pieces.Bishop}}
+Inheritance diagram for chess.\+pieces.\+Bishop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classchess_1_1pieces_1_1_bishop}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchess_1_1pieces_1_1_bishop_a2795d83582e1780325331c081ab0636b}\label{classchess_1_1pieces_1_1_bishop_a2795d83582e1780325331c081ab0636b}} 
+{\bfseries Bishop} (int row\+Coord, int col\+Coord)
+\item 
+\mbox{\Hypertarget{classchess_1_1pieces_1_1_bishop_a190dbd47b7ad20454e0cf2ca3643482a}\label{classchess_1_1pieces_1_1_bishop_a190dbd47b7ad20454e0cf2ca3643482a}} 
+{\bfseries Bishop} (int row\+Coord, int col\+Coord, boolean is\+Black)
+\item 
+boolean \mbox{\hyperlink{classchess_1_1pieces_1_1_bishop_a721dc4acecf08a5f7250f9b663de2aec}{can\+Move}} (\mbox{\hyperlink{classchess_1_1_board}{Board}} board, int new\+Row, int new\+Col)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchess_1_1pieces_1_1_bishop_a721dc4acecf08a5f7250f9b663de2aec}\label{classchess_1_1pieces_1_1_bishop_a721dc4acecf08a5f7250f9b663de2aec}} 
+\index{chess.pieces.Bishop@{chess.pieces.Bishop}!canMove@{canMove}}
+\index{canMove@{canMove}!chess.pieces.Bishop@{chess.pieces.Bishop}}
+\doxysubsubsection{\texorpdfstring{canMove()}{canMove()}}
+{\footnotesize\ttfamily boolean chess.\+pieces.\+Bishop.\+can\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchess_1_1_board}{Board}}}]{board,  }\item[{int}]{new\+Row,  }\item[{int}]{new\+Col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Abstract method implemented by the inherited classes to determine if a given piece can move to a new location on the board. The new location may have a piece from the opposing team that can be captured, or be an empty space. Pieces may jump over intermediate spaces like the \mbox{\hyperlink{classchess_1_1pieces_1_1_knight}{Knight}}, or have to travel through the path to the new location for the other pieces and the path must be empty. 
+\begin{DoxyParams}{Parameters}
+{\em board} & current board \\
+\hline
+{\em new\+Row} & new row coordinate to be moved to \\
+\hline
+{\em new\+Col} & new column coordinate to be moved to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the piece can move be moved to the new location; false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classchess_1_1pieces_1_1_piece_ab1b3f292b3044b1b722f8950ad9a5e40}{chess.\+pieces.\+Piece}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/chess/pieces/Bishop.\+java\end{DoxyCompactItemize}

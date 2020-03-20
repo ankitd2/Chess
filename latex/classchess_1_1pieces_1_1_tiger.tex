@@ -1,0 +1,87 @@
+\hypertarget{classchess_1_1pieces_1_1_tiger}{}\doxysection{chess.\+pieces.\+Tiger Class Reference}
+\label{classchess_1_1pieces_1_1_tiger}\index{chess.pieces.Tiger@{chess.pieces.Tiger}}
+Inheritance diagram for chess.\+pieces.\+Tiger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classchess_1_1pieces_1_1_tiger}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classchess_1_1pieces_1_1_tiger_ac9ca94ea4fac750ccabb1427939d63e1}{Tiger}} (int row\+Coord, int col\+Coord)
+\item 
+\mbox{\hyperlink{classchess_1_1pieces_1_1_tiger_aeadb64b0e0892fbab32c780f564a8656}{Tiger}} (int row\+Coord, int col\+Coord, boolean is\+Black)
+\item 
+boolean \mbox{\hyperlink{classchess_1_1pieces_1_1_tiger_afe9a912f538924034b9b0988d016e834}{can\+Move}} (\mbox{\hyperlink{classchess_1_1_board}{Board}} board, int new\+Row, int new\+Col)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classchess_1_1pieces_1_1_tiger}{Tiger}} class is for the \mbox{\hyperlink{classchess_1_1pieces_1_1_tiger}{Tiger}} custom chess piece. \mbox{\hyperlink{classchess_1_1pieces_1_1_tiger}{Tiger}} pieces can jump to any space that is 2 spaces away horizontally or vertically. They can also move to any adjacent tile if there is an enemy piece there to capture it. If there is no piece at the chosen adjacent tile, then the \mbox{\hyperlink{classchess_1_1pieces_1_1_tiger}{Tiger}} cannot move there. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classchess_1_1pieces_1_1_tiger_ac9ca94ea4fac750ccabb1427939d63e1}\label{classchess_1_1pieces_1_1_tiger_ac9ca94ea4fac750ccabb1427939d63e1}} 
+\index{chess.pieces.Tiger@{chess.pieces.Tiger}!Tiger@{Tiger}}
+\index{Tiger@{Tiger}!chess.pieces.Tiger@{chess.pieces.Tiger}}
+\doxysubsubsection{\texorpdfstring{Tiger()}{Tiger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily chess.\+pieces.\+Tiger.\+Tiger (\begin{DoxyParamCaption}\item[{int}]{row\+Coord,  }\item[{int}]{col\+Coord }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor for a \mbox{\hyperlink{classchess_1_1pieces_1_1_tiger}{Tiger}} at a row and column. Sets the default color to black
+
+
+\begin{DoxyParams}{Parameters}
+{\em row\+Coord} & \\
+\hline
+{\em col\+Coord} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_1_1pieces_1_1_tiger_aeadb64b0e0892fbab32c780f564a8656}\label{classchess_1_1pieces_1_1_tiger_aeadb64b0e0892fbab32c780f564a8656}} 
+\index{chess.pieces.Tiger@{chess.pieces.Tiger}!Tiger@{Tiger}}
+\index{Tiger@{Tiger}!chess.pieces.Tiger@{chess.pieces.Tiger}}
+\doxysubsubsection{\texorpdfstring{Tiger()}{Tiger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily chess.\+pieces.\+Tiger.\+Tiger (\begin{DoxyParamCaption}\item[{int}]{row\+Coord,  }\item[{int}]{col\+Coord,  }\item[{boolean}]{is\+Black }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for a \mbox{\hyperlink{classchess_1_1pieces_1_1_tiger}{Tiger}} at a given row and column, and the given color of the piece. A true value for is\+Black represents a black piece and a false value represents a white piece.
+
+
+\begin{DoxyParams}{Parameters}
+{\em row\+Coord} & \\
+\hline
+{\em col\+Coord} & \\
+\hline
+{\em is\+Black} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchess_1_1pieces_1_1_tiger_afe9a912f538924034b9b0988d016e834}\label{classchess_1_1pieces_1_1_tiger_afe9a912f538924034b9b0988d016e834}} 
+\index{chess.pieces.Tiger@{chess.pieces.Tiger}!canMove@{canMove}}
+\index{canMove@{canMove}!chess.pieces.Tiger@{chess.pieces.Tiger}}
+\doxysubsubsection{\texorpdfstring{canMove()}{canMove()}}
+{\footnotesize\ttfamily boolean chess.\+pieces.\+Tiger.\+can\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchess_1_1_board}{Board}}}]{board,  }\item[{int}]{new\+Row,  }\item[{int}]{new\+Col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Abstract method implemented by the \mbox{\hyperlink{classchess_1_1pieces_1_1_tiger}{Tiger}} class with the logic for \mbox{\hyperlink{classchess_1_1pieces_1_1_tiger}{Tiger}} pieces. \mbox{\hyperlink{classchess_1_1pieces_1_1_tiger}{Tiger}} pieces can move to spaces that are a distance of 2 away from the current square in the horizontal or vertical directions. The tiger can also move to an adjacent square (including adjacent diagonal tile) if there is an enemy piece there to be captured.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & current board \\
+\hline
+{\em new\+Row} & new row coordinate to be moved to \\
+\hline
+{\em new\+Col} & new column coordinate to be moved to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the piece can move be moved to the new location; false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classchess_1_1pieces_1_1_piece_ab1b3f292b3044b1b722f8950ad9a5e40}{chess.\+pieces.\+Piece}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/chess/pieces/Tiger.\+java\end{DoxyCompactItemize}

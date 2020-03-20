@@ -1,0 +1,89 @@
+\hypertarget{classchess_1_1_pawn}{}\doxysection{chess.\+Pawn Class Reference}
+\label{classchess_1_1_pawn}\index{chess.pieces.Pawn@{chess.pieces.Pawn}}
+Inheritance diagram for chess.\+Pawn\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classchess_1_1_pawn}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classchess_1_1_pawn_a70d368c5abdd01c4b14cb45be6c11032}{get\+Is\+First\+Move}} ()
+\item 
+\mbox{\hyperlink{classchess_1_1_pawn_aac8fe037a5b12cb61ccd4843f909acfe}{Pawn}} (int row\+Coord, int col\+Coord)
+\item 
+\mbox{\hyperlink{classchess_1_1_pawn_af9f26c053d40e4b60ba6e74477060970}{Pawn}} (int row\+Coord, int col\+Coord, boolean is\+Black)
+\item 
+boolean \mbox{\hyperlink{classchess_1_1_pawn_aa1ba01ee45a73385a65692428e3a1d77}{can\+Move}} (\mbox{\hyperlink{classchess_1_1_board}{Board}} board, int new\+Row, int new\+Col)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classchess_1_1_pawn_aac8fe037a5b12cb61ccd4843f909acfe}\label{classchess_1_1_pawn_aac8fe037a5b12cb61ccd4843f909acfe}} 
+\index{chess.pieces.Pawn@{chess.pieces.Pawn}!Pawn@{Pawn}}
+\index{Pawn@{Pawn}!chess.pieces.Pawn@{chess.pieces.Pawn}}
+\doxysubsubsection{\texorpdfstring{Pawn()}{Pawn()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily chess.\+Pawn.\+Pawn (\begin{DoxyParamCaption}\item[{int}]{row\+Coord,  }\item[{int}]{col\+Coord }\end{DoxyParamCaption})}
+
+Constructor for a Black \mbox{\hyperlink{classchess_1_1_pawn}{Pawn}} piece at a given row and column, sets is\+First\+Move to true 
+\begin{DoxyParams}{Parameters}
+{\em row\+Coord} & \\
+\hline
+{\em col\+Coord} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_1_1_pawn_af9f26c053d40e4b60ba6e74477060970}\label{classchess_1_1_pawn_af9f26c053d40e4b60ba6e74477060970}} 
+\index{chess.pieces.Pawn@{chess.pieces.Pawn}!Pawn@{Pawn}}
+\index{Pawn@{Pawn}!chess.pieces.Pawn@{chess.pieces.Pawn}}
+\doxysubsubsection{\texorpdfstring{Pawn()}{Pawn()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily chess.\+Pawn.\+Pawn (\begin{DoxyParamCaption}\item[{int}]{row\+Coord,  }\item[{int}]{col\+Coord,  }\item[{boolean}]{is\+Black }\end{DoxyParamCaption})}
+
+Constructor for a \mbox{\hyperlink{classchess_1_1_pawn}{Pawn}} piece at a given row and col, with a given color is\+Black and with is\+First\+Move being true 
+\begin{DoxyParams}{Parameters}
+{\em row\+Coord} & \\
+\hline
+{\em col\+Coord} & \\
+\hline
+{\em is\+Black} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchess_1_1_pawn_aa1ba01ee45a73385a65692428e3a1d77}\label{classchess_1_1_pawn_aa1ba01ee45a73385a65692428e3a1d77}} 
+\index{chess.pieces.Pawn@{chess.pieces.Pawn}!canMove@{canMove}}
+\index{canMove@{canMove}!chess.pieces.Pawn@{chess.pieces.Pawn}}
+\doxysubsubsection{\texorpdfstring{canMove()}{canMove()}}
+{\footnotesize\ttfamily boolean chess.\+Pawn.\+can\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchess_1_1_board}{Board}}}]{board,  }\item[{int}]{new\+Row,  }\item[{int}]{new\+Col }\end{DoxyParamCaption})}
+
+Checks if the move to the new\+Row, new\+Col on the board is a valid move for the current \mbox{\hyperlink{classchess_1_1_pawn}{Pawn}} piece. 
+\begin{DoxyParams}{Parameters}
+{\em board} & current board \\
+\hline
+{\em new\+Row} & new row coordinate to be moved to \\
+\hline
+{\em new\+Col} & new column coordinate to be moved to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classchess_1_1_piece_a7db29d460f73433257b2dd896b1356f0}{chess.\+Piece}}.
+
+\mbox{\Hypertarget{classchess_1_1_pawn_a70d368c5abdd01c4b14cb45be6c11032}\label{classchess_1_1_pawn_a70d368c5abdd01c4b14cb45be6c11032}} 
+\index{chess.pieces.Pawn@{chess.pieces.Pawn}!getIsFirstMove@{getIsFirstMove}}
+\index{getIsFirstMove@{getIsFirstMove}!chess.pieces.Pawn@{chess.pieces.Pawn}}
+\doxysubsubsection{\texorpdfstring{getIsFirstMove()}{getIsFirstMove()}}
+{\footnotesize\ttfamily boolean chess.\+Pawn.\+get\+Is\+First\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks to see if the move for the current \mbox{\hyperlink{classchess_1_1_pawn}{Pawn}} piece would be the first move for the piece. The first move for any pawn would allow it to move 2 spaces instead of 1. \begin{DoxyReturn}{Returns}
+true if it would be the first move; false if the pawn has already moved 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/chess/Pawn.\+java\end{DoxyCompactItemize}

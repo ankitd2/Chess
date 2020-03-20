@@ -1,0 +1,78 @@
+\hypertarget{classchess_1_1pieces_1_1_king}{}\doxysection{chess.\+pieces.\+King Class Reference}
+\label{classchess_1_1pieces_1_1_king}\index{chess.pieces.King@{chess.pieces.King}}
+Inheritance diagram for chess.\+pieces.\+King\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classchess_1_1pieces_1_1_king}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classchess_1_1pieces_1_1_king_abd6675e0e79434772471a4e59ac3b0f7}{King}} (int row\+Coord, int col\+Coord)
+\item 
+\mbox{\hyperlink{classchess_1_1pieces_1_1_king_aa74862011a88c006f35f53dc6615b00c}{King}} (int row\+Coord, int col\+Coord, boolean is\+Black)
+\item 
+boolean \mbox{\hyperlink{classchess_1_1pieces_1_1_king_a848074b9e775f90c9f6691d9ce421408}{can\+Move}} (\mbox{\hyperlink{classchess_1_1_board}{Board}} board, int new\+Row, int new\+Col)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classchess_1_1pieces_1_1_king_abd6675e0e79434772471a4e59ac3b0f7}\label{classchess_1_1pieces_1_1_king_abd6675e0e79434772471a4e59ac3b0f7}} 
+\index{chess.pieces.King@{chess.pieces.King}!King@{King}}
+\index{King@{King}!chess.pieces.King@{chess.pieces.King}}
+\doxysubsubsection{\texorpdfstring{King()}{King()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily chess.\+pieces.\+King.\+King (\begin{DoxyParamCaption}\item[{int}]{row\+Coord,  }\item[{int}]{col\+Coord }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classchess_1_1pieces_1_1_king}{King}} piece constructor at a given row and column 
+\begin{DoxyParams}{Parameters}
+{\em row\+Coord} & \\
+\hline
+{\em col\+Coord} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_1_1pieces_1_1_king_aa74862011a88c006f35f53dc6615b00c}\label{classchess_1_1pieces_1_1_king_aa74862011a88c006f35f53dc6615b00c}} 
+\index{chess.pieces.King@{chess.pieces.King}!King@{King}}
+\index{King@{King}!chess.pieces.King@{chess.pieces.King}}
+\doxysubsubsection{\texorpdfstring{King()}{King()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily chess.\+pieces.\+King.\+King (\begin{DoxyParamCaption}\item[{int}]{row\+Coord,  }\item[{int}]{col\+Coord,  }\item[{boolean}]{is\+Black }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for a \mbox{\hyperlink{classchess_1_1pieces_1_1_king}{King}} piece at a row and column with a color 
+\begin{DoxyParams}{Parameters}
+{\em row\+Coord} & \\
+\hline
+{\em col\+Coord} & \\
+\hline
+{\em is\+Black} & true if black piece; false otherwise \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchess_1_1pieces_1_1_king_a848074b9e775f90c9f6691d9ce421408}\label{classchess_1_1pieces_1_1_king_a848074b9e775f90c9f6691d9ce421408}} 
+\index{chess.pieces.King@{chess.pieces.King}!canMove@{canMove}}
+\index{canMove@{canMove}!chess.pieces.King@{chess.pieces.King}}
+\doxysubsubsection{\texorpdfstring{canMove()}{canMove()}}
+{\footnotesize\ttfamily boolean chess.\+pieces.\+King.\+can\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchess_1_1_board}{Board}}}]{board,  }\item[{int}]{new\+Row,  }\item[{int}]{new\+Col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if the move to the new\+Row, new\+Col on the board is a valid move for the current \mbox{\hyperlink{classchess_1_1pieces_1_1_king}{King}} piece. 
+\begin{DoxyParams}{Parameters}
+{\em board} & current board \\
+\hline
+{\em new\+Row} & new row coordinate to be moved to \\
+\hline
+{\em new\+Col} & new column coordinate to be moved to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is a valid move; false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classchess_1_1pieces_1_1_piece_ab1b3f292b3044b1b722f8950ad9a5e40}{chess.\+pieces.\+Piece}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/chess/pieces/King.\+java\end{DoxyCompactItemize}

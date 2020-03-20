@@ -1,0 +1,201 @@
+\hypertarget{classchess_1_1_piece}{}\doxysection{chess.\+Piece Class Reference}
+\label{classchess_1_1_piece}\index{chess.pieces.Piece@{chess.pieces.Piece}}
+Inheritance diagram for chess.\+Piece\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classchess_1_1_piece}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classchess_1_1_piece_af67351e734de2bd7fd44f4ab20eb8061}{set\+Row\+Coord}} (int row\+Coord)
+\item 
+void \mbox{\hyperlink{classchess_1_1_piece_a77a31fefbf9f575ba91f513a19e4b06c}{set\+Col\+Coord}} (int col\+Coord)
+\item 
+int \mbox{\hyperlink{classchess_1_1_piece_a37a837fd2987d407075d4720299a8836}{get\+Row\+Coord}} ()
+\item 
+int \mbox{\hyperlink{classchess_1_1_piece_ae72ff1564dee419e5204c76f5be55bc6}{get\+Col\+Coord}} ()
+\item 
+boolean \mbox{\hyperlink{classchess_1_1_piece_ae894821ffc65712d70bd8f416b517b3c}{is\+Black}} ()
+\item 
+\mbox{\hyperlink{classchess_1_1_piece_a678cd4c4db00bac7a6e2d4560c0d1ee7}{Piece}} (int row\+Coord, int col\+Coord)
+\item 
+\mbox{\hyperlink{classchess_1_1_piece_a9655db462a3764505e5f62ff7fabaf9d}{Piece}} (int row\+Coord, int col\+Coord, boolean is\+Black)
+\item 
+abstract boolean \mbox{\hyperlink{classchess_1_1_piece_a7db29d460f73433257b2dd896b1356f0}{can\+Move}} (\mbox{\hyperlink{classchess_1_1_board}{Board}} board, int new\+Row, int new\+Col)
+\item 
+boolean \mbox{\hyperlink{classchess_1_1_piece_a6f66c850dd38dbdc05d83c4eaf9c6a0b}{check\+Rook\+Move}} (\mbox{\hyperlink{classchess_1_1_board}{Board}} board, int new\+Row, int new\+Col, int current\+Row, int current\+Col)
+\item 
+boolean \mbox{\hyperlink{classchess_1_1_piece_a173fb38e020d3479e118c278985a5982}{check\+Bishop\+Move}} (\mbox{\hyperlink{classchess_1_1_board}{Board}} board, int new\+Row, int new\+Col, int current\+Row, int current\+Col)
+\item 
+String \mbox{\hyperlink{classchess_1_1_piece_a2e50b9061dc79ec55ae67fd89097bc1b}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class that represents each Chess piece that is present on the \mbox{\hyperlink{classchess_1_1_board}{Board}}. Extended by \mbox{\hyperlink{classchess_1_1_pawn}{Pawn}}, \mbox{\hyperlink{classchess_1_1_rook}{Rook}}, \mbox{\hyperlink{classchess_1_1_knight}{Knight}}, \mbox{\hyperlink{classchess_1_1_bishop}{Bishop}}, \mbox{\hyperlink{classchess_1_1_queen}{Queen}}, and \mbox{\hyperlink{classchess_1_1_king}{King}}. The logic for the individual pieces and movement is implemented within each child class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classchess_1_1_piece_a678cd4c4db00bac7a6e2d4560c0d1ee7}\label{classchess_1_1_piece_a678cd4c4db00bac7a6e2d4560c0d1ee7}} 
+\index{chess.pieces.Piece@{chess.pieces.Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!chess.pieces.Piece@{chess.pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{Piece()}{Piece()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily chess.\+Piece.\+Piece (\begin{DoxyParamCaption}\item[{int}]{row\+Coord,  }\item[{int}]{col\+Coord }\end{DoxyParamCaption})}
+
+Default constructor for a piece at a row and column. Sets the default color to black 
+\begin{DoxyParams}{Parameters}
+{\em row\+Coord} & \\
+\hline
+{\em col\+Coord} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_1_1_piece_a9655db462a3764505e5f62ff7fabaf9d}\label{classchess_1_1_piece_a9655db462a3764505e5f62ff7fabaf9d}} 
+\index{chess.pieces.Piece@{chess.pieces.Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!chess.pieces.Piece@{chess.pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{Piece()}{Piece()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily chess.\+Piece.\+Piece (\begin{DoxyParamCaption}\item[{int}]{row\+Coord,  }\item[{int}]{col\+Coord,  }\item[{boolean}]{is\+Black }\end{DoxyParamCaption})}
+
+Constructor for a piece at a given row and column, and the given color of the piece. A true value for is\+Black represents a black piece and a false value represents a white piece. 
+\begin{DoxyParams}{Parameters}
+{\em row\+Coord} & \\
+\hline
+{\em col\+Coord} & \\
+\hline
+{\em is\+Black} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchess_1_1_piece_a7db29d460f73433257b2dd896b1356f0}\label{classchess_1_1_piece_a7db29d460f73433257b2dd896b1356f0}} 
+\index{chess.pieces.Piece@{chess.pieces.Piece}!canMove@{canMove}}
+\index{canMove@{canMove}!chess.pieces.Piece@{chess.pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{canMove()}{canMove()}}
+{\footnotesize\ttfamily abstract boolean chess.\+Piece.\+can\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchess_1_1_board}{Board}}}]{board,  }\item[{int}]{new\+Row,  }\item[{int}]{new\+Col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Abstract method implemented by the inherited classes to determine if a given piece can move to a new location on the board. The new location may have a piece from the opposing team that can be captured, or be an empty space. Pieces may jump over intermediate spaces like the \mbox{\hyperlink{classchess_1_1_knight}{Knight}}, or have to travel through the path to the new location for the other pieces and the path must be empty. 
+\begin{DoxyParams}{Parameters}
+{\em board} & current board \\
+\hline
+{\em new\+Row} & new row coordinate to be moved to \\
+\hline
+{\em new\+Col} & new column coordinate to be moved to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the piece can move be moved to the new location; false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classchess_1_1_orbit_ae444bad47fb282b95300e7dc982906e7}{chess.\+Orbit}}, \mbox{\hyperlink{classchess_1_1_pawn_aa1ba01ee45a73385a65692428e3a1d77}{chess.\+Pawn}}, \mbox{\hyperlink{classchess_1_1_tiger_a2b4fd4d7838a19e7498b1c38708d771b}{chess.\+Tiger}}, \mbox{\hyperlink{classchess_1_1_king_af3494c91b7267c7fccf6d79b4067cece}{chess.\+King}}, \mbox{\hyperlink{classchess_1_1_queen_a8056f9c7cea9c3a24acbc1304b0a4a69}{chess.\+Queen}}, \mbox{\hyperlink{classchess_1_1_rook_a8325b0fce6b80cb20aa658c4594e8457}{chess.\+Rook}}, \mbox{\hyperlink{classchess_1_1_bishop_a39c5fbeac67359fdaccf33a1b948fe64}{chess.\+Bishop}}, and \mbox{\hyperlink{classchess_1_1_knight_ae32b3d8b4bfbbd87b17ae30971824913}{chess.\+Knight}}.
+
+\mbox{\Hypertarget{classchess_1_1_piece_a173fb38e020d3479e118c278985a5982}\label{classchess_1_1_piece_a173fb38e020d3479e118c278985a5982}} 
+\index{chess.pieces.Piece@{chess.pieces.Piece}!checkBishopMove@{checkBishopMove}}
+\index{checkBishopMove@{checkBishopMove}!chess.pieces.Piece@{chess.pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{checkBishopMove()}{checkBishopMove()}}
+{\footnotesize\ttfamily boolean chess.\+Piece.\+check\+Bishop\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchess_1_1_board}{Board}}}]{board,  }\item[{int}]{new\+Row,  }\item[{int}]{new\+Col,  }\item[{int}]{current\+Row,  }\item[{int}]{current\+Col }\end{DoxyParamCaption})}
+
+Checks to see if the move from the current location to the new location is a valid move for a \mbox{\hyperlink{classchess_1_1_bishop}{Bishop}}. It will check to see if the new location is on the same diagonal path and no pieces in the way. 
+\begin{DoxyParams}{Parameters}
+{\em board} & \\
+\hline
+{\em new\+Row} & \\
+\hline
+{\em new\+Col} & \\
+\hline
+{\em current\+Row} & \\
+\hline
+{\em current\+Col} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is a valid move for a \mbox{\hyperlink{classchess_1_1_bishop}{Bishop}}; false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_1_1_piece_a6f66c850dd38dbdc05d83c4eaf9c6a0b}\label{classchess_1_1_piece_a6f66c850dd38dbdc05d83c4eaf9c6a0b}} 
+\index{chess.pieces.Piece@{chess.pieces.Piece}!checkRookMove@{checkRookMove}}
+\index{checkRookMove@{checkRookMove}!chess.pieces.Piece@{chess.pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{checkRookMove()}{checkRookMove()}}
+{\footnotesize\ttfamily boolean chess.\+Piece.\+check\+Rook\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classchess_1_1_board}{Board}}}]{board,  }\item[{int}]{new\+Row,  }\item[{int}]{new\+Col,  }\item[{int}]{current\+Row,  }\item[{int}]{current\+Col }\end{DoxyParamCaption})}
+
+Checks to see if the move from the current location to the new location is a \mbox{\hyperlink{classchess_1_1_rook}{Rook}} move. This means moving either vertically and horizontally with no pieces in the way.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & \\
+\hline
+{\em new\+Row} & \\
+\hline
+{\em new\+Col} & \\
+\hline
+{\em current\+Row} & \\
+\hline
+{\em current\+Col} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is a valid move for a rook; false otherwise; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_1_1_piece_ae72ff1564dee419e5204c76f5be55bc6}\label{classchess_1_1_piece_ae72ff1564dee419e5204c76f5be55bc6}} 
+\index{chess.pieces.Piece@{chess.pieces.Piece}!getColCoord@{getColCoord}}
+\index{getColCoord@{getColCoord}!chess.pieces.Piece@{chess.pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{getColCoord()}{getColCoord()}}
+{\footnotesize\ttfamily int chess.\+Piece.\+get\+Col\+Coord (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the column coordinate of the piece \begin{DoxyReturn}{Returns}
+int column coordinate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_1_1_piece_a37a837fd2987d407075d4720299a8836}\label{classchess_1_1_piece_a37a837fd2987d407075d4720299a8836}} 
+\index{chess.pieces.Piece@{chess.pieces.Piece}!getRowCoord@{getRowCoord}}
+\index{getRowCoord@{getRowCoord}!chess.pieces.Piece@{chess.pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{getRowCoord()}{getRowCoord()}}
+{\footnotesize\ttfamily int chess.\+Piece.\+get\+Row\+Coord (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the row coordinate of the piece \begin{DoxyReturn}{Returns}
+int row coordinate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_1_1_piece_ae894821ffc65712d70bd8f416b517b3c}\label{classchess_1_1_piece_ae894821ffc65712d70bd8f416b517b3c}} 
+\index{chess.pieces.Piece@{chess.pieces.Piece}!isBlack@{isBlack}}
+\index{isBlack@{isBlack}!chess.pieces.Piece@{chess.pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{isBlack()}{isBlack()}}
+{\footnotesize\ttfamily boolean chess.\+Piece.\+is\+Black (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the color of the piece \begin{DoxyReturn}{Returns}
+true if the piece is black; white if the piece is white 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_1_1_piece_a77a31fefbf9f575ba91f513a19e4b06c}\label{classchess_1_1_piece_a77a31fefbf9f575ba91f513a19e4b06c}} 
+\index{chess.pieces.Piece@{chess.pieces.Piece}!setColCoord@{setColCoord}}
+\index{setColCoord@{setColCoord}!chess.pieces.Piece@{chess.pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{setColCoord()}{setColCoord()}}
+{\footnotesize\ttfamily void chess.\+Piece.\+set\+Col\+Coord (\begin{DoxyParamCaption}\item[{int}]{col\+Coord }\end{DoxyParamCaption})}
+
+Sets the column coordinate of the piece 
+\begin{DoxyParams}{Parameters}
+{\em col\+Coord} & new column coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_1_1_piece_af67351e734de2bd7fd44f4ab20eb8061}\label{classchess_1_1_piece_af67351e734de2bd7fd44f4ab20eb8061}} 
+\index{chess.pieces.Piece@{chess.pieces.Piece}!setRowCoord@{setRowCoord}}
+\index{setRowCoord@{setRowCoord}!chess.pieces.Piece@{chess.pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{setRowCoord()}{setRowCoord()}}
+{\footnotesize\ttfamily void chess.\+Piece.\+set\+Row\+Coord (\begin{DoxyParamCaption}\item[{int}]{row\+Coord }\end{DoxyParamCaption})}
+
+Sets the row coordinate of the piece 
+\begin{DoxyParams}{Parameters}
+{\em row\+Coord} & new row coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_1_1_piece_a2e50b9061dc79ec55ae67fd89097bc1b}\label{classchess_1_1_piece_a2e50b9061dc79ec55ae67fd89097bc1b}} 
+\index{chess.pieces.Piece@{chess.pieces.Piece}!toString@{toString}}
+\index{toString@{toString}!chess.pieces.Piece@{chess.pieces.Piece}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String chess.\+Piece.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints out the Color and \mbox{\hyperlink{classchess_1_1_piece}{Piece}} type of a \mbox{\hyperlink{classchess_1_1_piece}{Piece}} object \begin{DoxyReturn}{Returns}
+String in the form of \mbox{[}Color\mbox{]} \mbox{[}\mbox{\hyperlink{classchess_1_1_piece}{Piece}}\mbox{]} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/chess/Piece.\+java\end{DoxyCompactItemize}
